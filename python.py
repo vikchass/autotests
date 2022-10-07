@@ -536,8 +536,8 @@ try:
     button = browser.find_element(By.ID, "book")
     button.click()
 
-    x_element = browser.find_element(By.CSS_SELECTOR, "#input_value")
-    x = x_element.text
+    x_el= browser.find_element(By.CSS_SELECTOR, "#input_value")
+    x = x_el.text
     y = calc(x)
 
     x = browser.find_element(By.CSS_SELECTOR, "#answer")
