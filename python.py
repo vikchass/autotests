@@ -1,21 +1,21 @@
-# from selenium import webdriver
-# from selenium.webdriver.common.by import By
-# import time
-#
-# try:
-#     browser = webdriver.Chrome()
-#     browser.get("http://suninjuly.github.io/huge_form.html")
-#     elements = browser.find_elements(By.TAG_NAME, "input")
-#     for element in elements:
-#         element.send_keys("Мой ответ")
-#
-#     button = browser.find_element(By.CSS_SELECTOR, "button.btn")
-#     button.click()
-#
-# finally:
-#     time.sleep(5)
-#
-#     browser.quit()
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+try:
+    browser = webdriver.Chrome()
+    browser.get("http://suninjuly.github.io/huge_form.html")
+    elements = browser.find_elements(By.TAG_NAME, "input")
+    for element in elements:
+        element.send_keys("Мой ответ")
+
+    button = browser.find_element(By.CSS_SELECTOR, "button.btn")
+    button.click()
+
+finally:
+    time.sleep(5)
+
+    browser.quit()
 
 
 # ПРОВЕРЯЕМ ЧТО ПОЛЯ ВАЛИДНО ЗАПОЛНЕНЫ
@@ -509,8 +509,8 @@
 #     browser.quit()
 
 
-
-#  ОЖИДАНИЕ (хорошее)- явное2
+ #
+ # ОЖИДАНИЕ (хорошее)- явное2
 
 # from selenium.webdriver.common.by import By
 # from selenium.webdriver.support.ui import WebDriverWait
@@ -549,8 +549,8 @@
 # finally:
 #     time.sleep(10)
 #     browser.quit()
-#
-#
+
+
 #
 # def test_input_text(expected_result, actual_result):
 
@@ -559,12 +559,12 @@
 
 
 
-
-s = 'My Name is Julia'
-
-if 'Name' in s:
-    print('Substring found')
-
-index = s.find('Name')
-if index != -1:
-    print(f'Substring found at index {index}')
+#
+# s = 'My Name is Julia'
+#
+# if 'Name' in s:
+#     print('Substring found')
+#
+# index = s.find('Name')
+# if index != -1:
+#     print(f'Substring found at index {index}')
